@@ -71,7 +71,7 @@ const bsearch = function bsearch(arr, target) {
 
 const merge = function merge(left, right) {
   const sorted = [];
-  while ((left.length !== 0) || (right.length !== 0)) {
+  while ((left.length !== 0) && (right.length !== 0)) {
     if (left[0] < right[0]) {
       sorted.push(left.shift());
     } else {
